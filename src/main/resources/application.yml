@@ -1,0 +1,26 @@
+#server.port=8081
+#endpoint.service=http://18.218.234.255:9001/hello
+#endpoint.service=http://127.0.0.1:8080/hello
+### Spring properties
+# Service registers under this name
+spring:
+  application:
+     name: course-api-microservice
+
+# Discovery Server Access
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl: 
+      defaultZone: http://localhost:1111/eureka/
+
+# HTTP Server (Tomcat) Port
+server: 
+  port: 4444
+
+# Disable Spring Boot's "Whitelabel" default error page, so we can use our own
+error:
+  whitelabel:
+    enabled: false

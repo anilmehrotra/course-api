@@ -1,4 +1,4 @@
-package io.brain.track.springbootstarter.topic;
+package course.api.springbootstarter.ms.topic;
 
 import java.util.ArrayList;
 import java.util.Arrays;
